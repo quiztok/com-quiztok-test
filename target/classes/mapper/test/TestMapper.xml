@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quiztok.comquiztoktest.test.service.impl.TestMapper">
+	<resultMap type="test" id="testMap" autoMapping="true">
+		<association property="text" autoMapping="true" columnPrefix="text_" javaType="text"></association>
+	</resultMap>
+	<insert id="add">
+		insert into tn_test (id, text) 
+		values(
+			#{id}
+			, #{text.value}
+		)
+	</insert>
+	
+	<select id="get" resultMap="testMap">
+		select id, text AS text_value from tn_test
+		where
+			id = #{id}
+	</select>
+</mapper>

@@ -1,0 +1,8 @@
+com\quiztok\comquiztoktest\test\service\impl\TestImpl.class
+com\quiztok\comquiztoktest\test\service\TestService.class
+com\quiztok\comquiztoktest\test\model\Test.class
+com\quiztok\comquiztoktest\test\web\TestController.class
+com\quiztok\comquiztoktest\test\web\TestRest.class
+com\quiztok\comquiztoktest\test\model\Text.class
+com\quiztok\comquiztoktest\ComQuiztokTestApplication.class
+com\quiztok\comquiztoktest\test\service\impl\TestMapper.class
